@@ -41,7 +41,7 @@ app.use(bodyParser.json({ limit: '50mb' }))
 app.get('/', (req, res) => {
     res.status(200).json({
         name: 'BackEnd',
-        type: '4',
+        type: '1',
         Cookies: req.cookies,
     })
 })
