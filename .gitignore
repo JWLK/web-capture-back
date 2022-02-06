@@ -143,3 +143,7 @@ sketch
 /cert/
 *.key
 *.crt
+
+
+#resourece
+routes/images/
