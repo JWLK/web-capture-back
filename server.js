@@ -19,7 +19,7 @@ const httpsOptions = {
  * Cors : Cross Origin Resource Sharing
  */
 let corsOption = {
-    // origin: 'https://172.30.1.16:3443', // 허락하는 요청 주소
+    // origin: 'https://localhost:3443', // 허락하는 요청 주소
     origin: true,
     credentials: true, // true로 하면 설정한 내용을 response 헤더에 추가됨.
 }
