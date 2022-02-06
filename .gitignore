@@ -146,4 +146,4 @@ sketch
 
 
 #resourece
-routes/images/
+routes/images/*
