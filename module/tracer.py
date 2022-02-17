@@ -77,6 +77,7 @@ def main():
     print('[{0},{1},{2}]'.format(cr0[0],cr0[1],cr0[2]))
     print('[{0},{1},{2}]'.format(cr1[0],cr1[1],cr1[2]))
     print('[{0},{1},{2}]'.format(cr2[0],cr2[1],cr2[2]))
+    print(decoded)
     
     
 if __name__ == '__main__':
