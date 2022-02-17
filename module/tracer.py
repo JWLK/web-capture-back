@@ -32,9 +32,9 @@ def main():
     
     scaleValue = 1
     splitValue = 1
-    baseValue = 74
-    baseSpace = 250
-    baseSplit = 60
+    baseValue = 269
+    baseSpace = 705
+    baseSplit = 112
     
     decoded = pyzbar.decode(imgGray)
     # print(decoded)
@@ -49,12 +49,12 @@ def main():
 #         print(d.data.decode('utf-8'))
         pointX = d.rect[0]
         pointY = d.rect[1]
-        baseLine = (int)(d.rect[2]+d.rect[3])/2*0.99
+        baseLine = (int)(d.rect[2]+d.rect[3])/2
     
     # print(baseLine)
     scaleValue = baseLine/baseValue
     # print(scaleValue)
-    splitValue = (int)(baseSplit*scaleValue)-10
+    splitValue = (int)(baseSplit*scaleValue)
     pointX = pointX + (int)(baseSpace*scaleValue)
     pointY = pointY + (int)(baseLine/2)
     
