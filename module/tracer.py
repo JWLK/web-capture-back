@@ -24,6 +24,7 @@ def main():
     # img = cv2.imread(imageConvert)
     imgGray = cv2.cvtColor(imageConvert, cv2.COLOR_BGR2GRAY)
     imgHSV = cv2.cvtColor(imageConvert, cv2.COLOR_BGR2HSV)
+    imgRGB = cv2.cvtColor(imageConvert, cv2.COLOR_BGR2RGB)
     
     qrExist=False
     pointX=0
@@ -63,11 +64,19 @@ def main():
     cl0 = imgHSV[pointY,pointX]
     cl1 = imgHSV[pointY,pointX+splitValue]
     cl2 = imgHSV[pointY,pointX+2*splitValue]
+
+
+    cr0 = imgRGB[pointY,pointX]
+    cr1 = imgRGB[pointY,pointX+splitValue]
+    cr2 = imgRGB[pointY,pointX+2*splitValue]
     
     print(qrExist)
     print('[{0},{1},{2}]'.format(cl0[0],cl0[1],cl0[2]))
     print('[{0},{1},{2}]'.format(cl1[0],cl1[1],cl1[2]))
     print('[{0},{1},{2}]'.format(cl2[0],cl2[1],cl2[2]))
+    print('[{0},{1},{2}]'.format(cr0[0],cr0[1],cr0[2]))
+    print('[{0},{1},{2}]'.format(cr1[0],cr1[1],cr1[2]))
+    print('[{0},{1},{2}]'.format(cr2[0],cr2[1],cr2[2]))
     
     
 if __name__ == '__main__':
