@@ -34,7 +34,7 @@ def main():
     scaleValue = 1
     splitValue = 1
     baseValue = 253
-    baseSpace = 745
+    baseSpace = 691
     baseSplit = 104
     
     decoded = pyzbar.decode(imgGray)
