@@ -33,9 +33,9 @@ def main():
     
     scaleValue = 1
     splitValue = 1
-    baseValue = 269
-    baseSpace = 705
-    baseSplit = 112
+    baseValue = 253
+    baseSpace = 745
+    baseSplit = 104
     
     decoded = pyzbar.decode(imgGray)
     # print(decoded)
@@ -78,6 +78,9 @@ def main():
     print('[{0},{1},{2}]'.format(cr1[0],cr1[1],cr1[2]))
     print('[{0},{1},{2}]'.format(cr2[0],cr2[1],cr2[2]))
     print(decoded)
+    print(pointX)
+    print(pointY)
+    print(splitValue)
     
     
 if __name__ == '__main__':
